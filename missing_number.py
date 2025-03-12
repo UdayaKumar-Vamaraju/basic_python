@@ -14,7 +14,7 @@ n=int(input("Enter the size of an array:"))
 
 arr=[]
 print("Enter the numbers:")
-for i in range(0,n-1):
+for i in range(1,n):
     arr.append(int(input()))
 
 for i in range(1,n):
