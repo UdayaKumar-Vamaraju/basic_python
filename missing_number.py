@@ -17,10 +17,9 @@ print("Enter the numbers:")
 for i in range(0,n-1):
     arr.append(int(input()))
 
-expected_sum = n * (n + 1) // 2
-
-actual_sum=sum(arr)
-
-missing_num = expected_sum - actual_sum
-
-print("The  missing number is:",missing_num)
+for i in range(1,n):
+    if i not in arr:
+        print("missing number is:",i)
+        break
+else:
+    print("No number is missing")
